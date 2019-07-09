@@ -4,36 +4,15 @@ object Day1 {
   def main(args: Array[String]): Unit = {
     var helloWorldString: String = "Hello World"
     println(helloWorldString)
+    HelloWorld.helloWorldPrint(helloWorldString)
+    println(HelloWorld.helloWorld("Hello World"))
 
 
-    helloWorldPrint(helloWorldString)
-    println(helloWorld("Hello World"))
+    HelloWorld.varibleTypeCheck(input = 4)
 
 
-    varibleTypeCheck(input = 4)
-
-
-    println(reduceString("Test Word", 3))
-
+    println(ReduceString.reduceString("Test" , 3))
     FizzBuzz.fizzBuzz("Fizz"," Buzz",30)
-  }
-
-
-  def helloWorldPrint(input: String): Unit = {
-    println(input)
-  }
-
-  def helloWorld(input: String): String = {
-    input
-  }
-
-  //TODO
-  def varibleTypeCheck(input: Unit): Unit = {
-    println(input)
-  }
-
-  def reduceString(string: String, int: Int): String = {
-    string.takeRight(3)
   }
 
 }
