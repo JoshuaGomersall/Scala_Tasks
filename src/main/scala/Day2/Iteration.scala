@@ -2,7 +2,7 @@ package Day2
 
 //TODO
 object Iteration {
-  def LoopText(stringInput: String , repeatTimes: Int): Unit = {
+  def loopText(stringInput: String , repeatTimes: Int): Unit = {
     var i :Int = 0
     while(i < repeatTimes) {
      println(stringInput)
@@ -11,7 +11,7 @@ object Iteration {
   }
 
 
-  def LoopTextSquare(stringInput: String , repeatTimes: Int): Unit = {
+  def loopTextSquare(stringInput: String , repeatTimes: Int): Unit = {
     var loopDown: Int = 0
     var loopLeft: Int = 0
     while (loopDown < repeatTimes) {
