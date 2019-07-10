@@ -8,5 +8,9 @@ object Day2 {
     Iteration.LoopTextSquare("O",50)
 
     FizzBuzz.fizzBuzz("BUZZ" , "FIZZ" , 68)
+
+    println(SwapNumberOrder.reverseNumbers(List(1,2,3,4,5)))
+
+    println(SwapNumberOrder.reverseNumbersFirstTwoOnly(List(1,2,3,4,5)))
   }
 }
