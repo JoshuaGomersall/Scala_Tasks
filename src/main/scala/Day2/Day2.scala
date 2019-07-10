@@ -1,7 +1,12 @@
 package Day2
 
-object Day1 {
+object Day2 {
   def main(args: Array[String]): Unit = {
+    Iteration.LoopText("Joshwa is great" , 3)
 
+    Iteration.LoopTextSquare("H",4)
+    Iteration.LoopTextSquare("O",50)
+
+    FizzBuzz.fizzBuzz("BUZZ" , "FIZZ" , 68)
   }
 }
