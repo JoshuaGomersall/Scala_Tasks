@@ -12,11 +12,11 @@ object MainGame{
 
 
   def randomLocation (inputList: List[Int]) : List[Int] ={
-    var inputArrayAdded = inputList :+ Random.nextInt(10)
-    inputArrayAdded = inputArrayAdded :+ Random.nextInt(10)
-    println(inputArrayAdded)
+    val inputArrayAdded = inputList :+ Random.nextInt(10)
+    val inputArrayAdded2 = inputArrayAdded :+ Random.nextInt(10)
+    println(inputArrayAdded2)
 
-    inputArrayAdded
+    inputArrayAdded2
   }
 
 

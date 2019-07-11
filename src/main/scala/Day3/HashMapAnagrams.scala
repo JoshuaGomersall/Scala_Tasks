@@ -1,5 +1,7 @@
 package Day3
 import java.nio.file.{Files, Paths}
+
+import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
 object HashMapAnagrams {
@@ -20,11 +22,11 @@ object HashMapAnagrams {
   }
 
   def readFile(fileLocation: String): Any = {
-    var wordsStored:Array[String] = Array()
+    var wordsStored: ArrayBuffer[String] = ArrayBuffer()
 
     for (line <- Source.fromFile(fileLocation).getLines()) {
       println(line)
-      wordsStored = wordsStored :+ line
+       wordsStored = wordsStored :+ line
     }
     println(wordsStored.toList.toString)
     println(wordsStored.toList.length.toString)
