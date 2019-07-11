@@ -1,0 +1,2 @@
+# Scala_Tasks
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3530e6f9d13e4d0d85ed88d4bb5194f3)](https://app.codacy.com/app/JoshuaGomersall/Scala_Tasks?utm_source=github.com&utm_medium=referral&utm_content=JoshuaGomersall/Scala_Tasks&utm_campaign=Badge_Grade_Dashboard)
