@@ -1,10 +1,10 @@
 package Day3
 import java.nio.file.{Files, Paths}
-
-import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
 object HashMapAnagrams {
+  var wordsStored:Array[String] = Array()
+
   def checkReadFromFileExists(fileLocation: String): Unit = {
     if (!Files.exists(Paths.get(fileLocation))) {
       println("File does not exist")
@@ -22,11 +22,9 @@ object HashMapAnagrams {
   }
 
   def readFile(fileLocation: String): Any = {
-    var wordsStored: ArrayBuffer[String] = ArrayBuffer()
-
     for (line <- Source.fromFile(fileLocation).getLines()) {
       println(line)
-       wordsStored = wordsStored :+ line
+      wordsStored = wordsStored :+ line
     }
     println(wordsStored.toList.toString)
     println(wordsStored.toList.length.toString)
