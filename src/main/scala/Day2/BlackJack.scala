@@ -1,6 +1,5 @@
 package Day2
 
-//TODO
 object BlackJack{
   def blackJackCompareInts(player1: Int, player2: Int): Int = {
     if (player1 > 21 && player2 > 21){

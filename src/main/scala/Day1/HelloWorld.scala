@@ -10,7 +10,6 @@ object HelloWorld {
     input
   }
 
-  //TODO
   def varibleTypeCheck(input: Unit): Unit = {
     println(input)
   }

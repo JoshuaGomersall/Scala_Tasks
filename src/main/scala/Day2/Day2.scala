@@ -18,5 +18,10 @@ object Day2 {
     println(BlackJack.blackJackCompareInts(20,18))
     println(BlackJack.blackJackCompareInts(29,5))
     println(BlackJack.blackJackCompareInts(22,22))
+
+    println(Unique_Sum.uniqueSum3Numbers(4,4,4))
+    println(Unique_Sum.uniqueSum3Numbers(4,4,7))
+    println(Unique_Sum.uniqueSum3Numbers(6,4,7))
+
   }
 }
