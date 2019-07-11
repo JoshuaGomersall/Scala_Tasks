@@ -12,16 +12,15 @@ object Unique_Sum {
     }
     else {
       println(s"The values are all unquie")
-      values.sum
     }
     val unique: List[Int] = List()
-    for (i <- 0 to values.length - 1) {
+    for (i <- 0 until values.length - 1) {
       if (values.contains(values(i))){
         println(s"The Value $i is not unique")
       }
       else {
-        val uniquetotal = unique :+ i
-        println(uniquetotal.toString())
+        val uniqueTotal = unique :+ i
+        println(uniqueTotal.toString())
       }
     }
     unique.sum
