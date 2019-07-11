@@ -9,14 +9,13 @@
 - and many more
 
 
-#Clone
-Clone the project from Git 
+#Clone - Clone the project from Git 
 
 #IDE
-As this is written in scala i would recomend using intellij
+- As this is written in scala i would recomend using intellij
 
 #Running Single File
-To run any of the objects make a call to them with the expected peramitors 
+- To run any of the objects make a call to them with the expected peramitors 
 
 #Running Multiple Files
-In each package a main object can be found for example Day1 in the Day1 package
+- In each package a main object can be found for example Day1 in the Day1 package
