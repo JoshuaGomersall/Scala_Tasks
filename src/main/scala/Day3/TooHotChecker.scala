@@ -10,11 +10,9 @@ object TooHotChecker{
       case false => upperLimit = 90
     }
 
-    if (temperature <= upperLimit && temperature > 60){
+    if (temperature <= upperLimit && temperature > 60)
       true
-    }
-    else {
+    else
       false
-    }
   }
 }
