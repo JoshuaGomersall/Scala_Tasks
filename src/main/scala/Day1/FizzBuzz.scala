@@ -1,7 +1,7 @@
 package Day1
 
 object FizzBuzz {
-  def fizzBuzz(stringInput: String, stringInput2: String, intInput: Int): String = {
+  def fizzBuzz(stringInput: String, stringInput2: String, intInput: Int): Unit = {
     var i: Int = 1
     while (i < intInput) {
       if (i % 15 == 0){println(stringInput + stringInput2)}
@@ -10,6 +10,5 @@ object FizzBuzz {
       else {println(i)}
       i += 1
     }
-    "Done"
   }
 }

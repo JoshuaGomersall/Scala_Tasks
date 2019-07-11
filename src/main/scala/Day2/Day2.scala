@@ -1,5 +1,7 @@
 package Day2
 
+import Day1.FizzBuzz
+
 object Day2 {
   def main(args: Array[String]): Unit = {
     Iteration.loopText("Joshwa is great" , 3)
@@ -22,6 +24,5 @@ object Day2 {
     println(Unique_Sum.uniqueSum3Numbers(4,4,4))
     println(Unique_Sum.uniqueSum3Numbers(4,4,7))
     println(Unique_Sum.uniqueSum3Numbers(6,4,7))
-
   }
 }
