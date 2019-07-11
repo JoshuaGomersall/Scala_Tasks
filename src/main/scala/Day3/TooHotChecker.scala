@@ -7,10 +7,14 @@ object TooHotChecker{
 
     isSummer match {
       case true => upperLimit = 100
+      case false => upperLimit = 90
     }
 
-
-
-    true
+    if (temperature <= upperLimit && temperature > 60){
+      true
+    }
+    else {
+      false
+    }
   }
 }
