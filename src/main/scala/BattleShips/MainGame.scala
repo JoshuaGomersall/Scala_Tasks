@@ -6,7 +6,8 @@ import scala.util._
 object MainGame{
 
   def randomInt(limit: Int) : Int = {
-    val r = new Random()
+    val randomSeed = Random.nextInt(50000)
+    val r = new Random(randomSeed)
     r.nextInt(limit)
   }
 

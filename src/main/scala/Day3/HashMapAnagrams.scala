@@ -3,8 +3,6 @@ import java.nio.file.{Files, Paths}
 import scala.io.Source
 
 object HashMapAnagrams {
-  var wordsStored:Array[String] = Array()
-
   def checkReadFromFileExists(fileLocation: String): Unit = {
     if (!Files.exists(Paths.get(fileLocation))) {
       println("File does not exist")
@@ -22,6 +20,7 @@ object HashMapAnagrams {
   }
 
   def readFile(fileLocation: String): Any = {
+    var wordsStored:Array[String] = Array()
     for (line <- Source.fromFile(fileLocation).getLines()) {
       println(line)
       wordsStored = wordsStored :+ line
