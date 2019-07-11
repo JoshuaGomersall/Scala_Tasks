@@ -1,10 +1,11 @@
 package Day2
 
-import Day1.FizzBuzz
-
 object Day2 {
   def main(args: Array[String]): Unit = {
     Iteration.loopText("Joshwa is great" , 3)
+
+    println(Functional_1.reverseNumbersWithLimitInput(List(5,3,7,9,10),3))
+    println(Functional_1.reverseNumbersWithLimitInput(List(5,3,7,9,10),1))
 
     Iteration.loopTextSquare("H",4)
     Iteration.loopTextSquare("O",50)

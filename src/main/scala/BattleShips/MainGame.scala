@@ -23,7 +23,6 @@ object MainGame{
 
 
   def playerTurn (enemyCords : List[Int] , guessX : Int , guessY: Int): Unit ={
-
     if (enemyCords.contains(guessX) && enemyCords.contains(guessY))
       {
         println("Done")

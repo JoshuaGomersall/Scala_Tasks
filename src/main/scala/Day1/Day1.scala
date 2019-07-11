@@ -8,12 +8,10 @@ object Day1 {
     println(HelloWorld.helloWorld("Hello World"))
 
 
-    HelloWorld.varibleTypeCheck(input = 4)
+    HelloWorld.varibleTypeCheck("TestMessage")
 
 
     println(ReduceString.reduceString("Test" , 3))
-    FizzBuzz.fizzBuzz("Fizz"," Buzz",30)
-
     println(Sum.add(4,3))
 
   }
