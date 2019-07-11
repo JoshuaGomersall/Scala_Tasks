@@ -11,7 +11,7 @@ object Unique_Sum {
     }
     else {
       println(s"The values are unquie")
-      return values.sum
+      values.sum
     }
 
 
