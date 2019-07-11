@@ -11,8 +11,6 @@ object Day2 {
     Iteration.loopTextSquare("H",4)
     Iteration.loopTextSquare("O",5)
 
-    sys.exit()
-
 
     FizzBuzz.fizzBuzz("BUZZ" , "FIZZ" , 68)
 
