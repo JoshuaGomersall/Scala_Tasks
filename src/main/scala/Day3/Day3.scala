@@ -10,7 +10,7 @@ object Day3 {
     println(TooHotChecker.summerHeatChecker(55,isSummer = true))
 
     //HashMapAnagrams.checkReadFromFileExists("random file name")
-    //HashMapAnagrams.checkReadFromFileExists("target/scala-2.13/classes/Day3/examplefile.txt")
+    HashMapAnagrams.checkReadFromFileExists(".gitignore")
 
     HashMapAnagrams.orderString("frjrdgseh")
 

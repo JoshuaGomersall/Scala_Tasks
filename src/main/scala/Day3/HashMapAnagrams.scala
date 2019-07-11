@@ -19,13 +19,11 @@ object HashMapAnagrams {
     println(splitCharacters.toString())
   }
 
-  def readFile(fileLocation: String): Any = {
-    var wordsStored:Array[String] = Array()
-    for (line <- Source.fromFile(fileLocation).getLines()) {
-      println(line)
-      wordsStored = wordsStored :+ line
+  def readFile(fileLocation: String): Seq[String] = {
+    val bufferedSource = io.Source.fromFile(fileLocation)
+    val lines = (for (line <- bufferedSource.getLines()) yield line).toList
+    bufferedSource.close
+    println(lines.toString())
+    lines
     }
-    println(wordsStored.toList.toString)
-    println(wordsStored.toList.length.toString)
-  }
 }
