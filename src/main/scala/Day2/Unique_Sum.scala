@@ -13,14 +13,14 @@ object Unique_Sum {
       println(s"The values are unquie")
       return values.sum
     }
-    var unique: List[Int] = List()
+    val unique: List[Int] = List()
     for (i <- 0 to values.length - 1) {
       if (values.contains(values(i))){
         println(s"The Value $i is not unique")
       }
       else {
-        unique = unique :+ i
-        println(unique.toString())
+        val uniquetotal = unique :+ i
+        println(uniquetotal.toString())
       }
     }
     unique.sum
