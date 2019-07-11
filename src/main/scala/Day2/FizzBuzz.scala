@@ -2,7 +2,7 @@ package Day2
 
 object FizzBuzz {
   def fizzBuzz(stringInput: String, stringInput2: String, intInput: Int): Unit = {
-    var i: Int = 1
+    val i: Int = 1
     for (i <- 1 to intInput)
       intInput match {
         case x if (i % 15 == 0) => println(s"$i Is : $stringInput $stringInput2")

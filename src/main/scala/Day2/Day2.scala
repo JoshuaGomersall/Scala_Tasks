@@ -3,12 +3,16 @@ package Day2
 object Day2 {
   def main(args: Array[String]): Unit = {
     Iteration.loopText("Joshwa is great" , 3)
+    Iteration.loopTextSquare("Josh is Great" , 1)
 
     println(Functional_1.reverseNumbersWithLimitInput(List(5,3,7,9,10),3))
     println(Functional_1.reverseNumbersWithLimitInput(List(5,3,7,9,10),1))
 
     Iteration.loopTextSquare("H",4)
-    Iteration.loopTextSquare("O",50)
+    Iteration.loopTextSquare("O",5)
+
+    sys.exit()
+
 
     FizzBuzz.fizzBuzz("BUZZ" , "FIZZ" , 68)
 
