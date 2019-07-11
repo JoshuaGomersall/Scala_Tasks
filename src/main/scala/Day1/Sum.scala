@@ -5,13 +5,13 @@ object Sum{
 
   def addOrMultiply(int: Int, int2: Int , addCheck: Boolean): Int =
     if (int == 0 && int == 0) {
-      return '0'
+      '0'
     }
     else if (addCheck) {
-    return int + int2
+    int + int2
   }
   else {
-    return int * int2
+    int * int2
   }
 
 }
