@@ -9,7 +9,8 @@
 - and many more
 
 
-#Clone - Clone the project from Git 
+#Clone 
+- Clone the project from Git 
 
 #IDE
 - As this is written in scala i would recomend using intellij
