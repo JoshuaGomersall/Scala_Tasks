@@ -3,6 +3,8 @@
 
 ![Cats Friendly Badge](https://typelevel.org/cats/img/cats-badge-tiny.png) 
 
+![Human Badge](https://octodex.github.com/images/filmtocats.png)
+
 This Repo Covers A Series of various scala tasks For Example
 * Adding or multiplying two ints based on a boolean 
 * taking in a string and reversing its order with a limit for number of cha values yuo want returning 
