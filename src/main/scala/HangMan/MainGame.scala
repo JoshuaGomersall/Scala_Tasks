@@ -30,7 +30,7 @@ object MainGame{
 
   def selectDifficulty(difficultyChoice: String) : List[String] = {
     difficultyChoice.toLowerCase() match {
-      case "easy" | "e" => List("t","s","e")
+      case "easy" | "e" => List("v","a","r")
       case "medium" | "m" => List("s","c","a","l","a")
       case "hard" | "h" => List("h","e","l","l","o"," ","w","o","r","l","d")
       case _ => println(s"Not A Valid Input\nTry easy ,medium or hard")
