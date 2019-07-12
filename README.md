@@ -19,3 +19,5 @@ Running Single File
 
 Running Multiple Files
 * In each package a main object can be found for example Day1 in the Day1 package
+
+![Human Badge](https://octodex.github.com/images/filmtocats.png)
