@@ -5,6 +5,9 @@ import BattleShips.MainGame.validateUserInputAgainstGridSize
 object MainGame{
   def main(args: Array[String]): Unit = {
 
+
+    println("Please Select Easy ,Medium or Hard")
+
     val guessedLetters:List[String] = List()
     val word = selectDifficulty(scala.io.StdIn.readLine())
     print("_ " * word.length + "\n")
@@ -12,15 +15,6 @@ object MainGame{
     guessingStage(word ,guessedLetters,List(),5)
   }
 
-  def selectDifficulty(difficultyChoice: String) : List[String] = {
-    difficultyChoice match {
-      case "easy" | "e" => List("t","s","e")
-      case "medium" | "m" => List("s","c","a","l","a")
-      case "hard" | "h" => List("h","e","l","l","o"," ","w","o","r","l","d")
-      case _ => println(s"Not A Valid Input \n Try easy ,medium or hard")
-        selectDifficulty(scala.io.StdIn.readLine())
-    }
-  }
 
   def playerLivesDisplay (lives: Int) : Unit =
     lives match {
@@ -34,6 +28,16 @@ object MainGame{
         sys.exit(1)
     }
 
+  def selectDifficulty(difficultyChoice: String) : List[String] = {
+    difficultyChoice.toLowerCase() match {
+      case "easy" | "e" => List("t","s","e")
+      case "medium" | "m" => List("s","c","a","l","a")
+      case "hard" | "h" => List("h","e","l","l","o"," ","w","o","r","l","d")
+      case _ => println(s"Not A Valid Input\nTry easy ,medium or hard")
+        selectDifficulty(scala.io.StdIn.readLine())
+    }
+  }
+
   def guessingStage (correctWord: List[String] ,guessedLetters: List[String]  ,correctLetters: List[String], lives : Int) : Unit = {
     println(s"You Have $lives Lives")
 
@@ -42,14 +46,14 @@ object MainGame{
     val playerInput = scala.io.StdIn.readLine().charAt(0).toLower.toString
     println(s"Guess : $playerInput")
 
-
     List(1, 2, 2, 1, 1).distinct.length == 1 // returns false
     List(1, 1, 1, 1, 1).distinct.length == 1 // returns true
     println(List().distinct.length == 1)
 
     println(s"You Have Guessed $guessedLetters")
+    println(s"You Have Correctly Guessed $correctLetters")
 
-    if(correctLetters.sorted == correctWord.sorted)
+    if(correctLetters.distinct.sorted == correctWord.distinct.sorted)
       {
         println("YOU DID IT")
         sys.exit()
