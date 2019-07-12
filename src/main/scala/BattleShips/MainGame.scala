@@ -4,9 +4,8 @@ object MainGame{
 
   def takeUserInput(playerName: String , xOrYCords: String) : Int = {
     println(s"Player $playerName Its Your Turn To Choose Your $xOrYCords Coordinates")
-    val playerInput = scala.io.StdIn.readInt()
+    val playerInputChecked = validateUserInputAgainstGridSize(scala.io.StdIn.readInt())
 
-    val playerInputChecked = validateUserInputAgainstGridSize(playerInput)
     playerInputChecked
   }
 
