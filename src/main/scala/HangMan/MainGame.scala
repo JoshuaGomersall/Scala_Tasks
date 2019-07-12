@@ -38,19 +38,23 @@ object MainGame{
     println(s"Guess : $playerInput")
 
 
+    List(1, 2, 2, 1, 1).distinct.length == 1 // returns false
+    List(1, 1, 1, 1, 1).distinct.length == 1 // returns true
+    println(List().distinct.length == 1)
 
-    if (correctWord.equals(guessedLetters.toString()))
+    println(s"Answer Is $correctWord You Have Guessed $guessedLetters")
+
+    if(guessedLetters.distinct.contains(correctWord.toString()))
       {
         println("YOU DID IT")
       }
 
     playerInput match {
-      case x if (guessedLetters.contains(x)) => {
+      case x if guessedLetters.contains(x) =>
         println("You Have Already Tried This Before")
         playerLivesDisplay(lives)
         println(guessedLetters)
         guessingStage(correctWord,guessedLetters,lives)
-      }
       case x if correctWord.contains(x) =>
         println("Correct")
         playerLivesDisplay(lives)
@@ -59,11 +63,11 @@ object MainGame{
         guessingStage(correctWord,newGuessedLetters,lives)
       case x if !correctWord.contains(x) =>
         println("Wrong")
-        val livesupdated = lives -1
-        playerLivesDisplay(livesupdated)
+        val livesUpdated = lives -1
+        playerLivesDisplay(livesUpdated)
         val newGuessedLetters = guessedLetters :+ playerInput
         println(newGuessedLetters)
-        guessingStage(correctWord,newGuessedLetters,livesupdated)
+        guessingStage(correctWord,newGuessedLetters,livesUpdated)
     }
   }
 }
