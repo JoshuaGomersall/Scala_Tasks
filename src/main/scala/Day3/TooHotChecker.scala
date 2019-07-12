@@ -2,17 +2,10 @@ package Day3
 
 object TooHotChecker{
   def summerHeatChecker(temperature: Int , isSummer: Boolean): Boolean = {
-
-    var upperLimit = 90
-
     isSummer match {
-      case true => upperLimit = 100
-      case false => upperLimit = 90
+      case x if x && temperature <= 100 && temperature > 60 => true
+      case x if !x && temperature <= 90 && temperature > 60 => true
+      case _ => false
     }
-
-    if (temperature <= upperLimit && temperature > 60)
-      true
-    else
-      false
   }
 }

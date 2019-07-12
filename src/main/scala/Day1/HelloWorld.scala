@@ -10,8 +10,8 @@ object HelloWorld {
     input
   }
 
-  def varibleTypeCheck(input: Unit): Unit = {
-    println(input)
+  def varibleTypeCheck(input: Any): Any = {
+    input
   }
 
 }
